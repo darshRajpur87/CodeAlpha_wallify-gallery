@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery</title>
+  <link rel="stylesheet" href="static/css/style.css">
+
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo-search">
+        <span class="logo">wallify-gallery</span>
+        <div class="search-wrapper">
+          <input type="text" placeholder="Search wallpapers..." class="search-input" />
+          <svg class="search-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 104.5 4.5a7.5 7.5 0 0012.15 12.15z" />
+          </svg>
+        </div>
+      </div>
+      <div class="nav-links">
+        <a href="#">Explore</a>
+        <a href="#">License</a>
+        <button class="join-btn">Add Image</button>
+      </div>
+    </div>
+
+    <!-- Tags / Filters -->
+    <div class="filter-tags">
+        <button>8k wallpaper</button>
+        <button>desktop backgrounds</button>
+        <button>desktop wallpaper</button>
+        <button>Nature</button>
+        <button>City</button>
+        <button>Animal</button>
+        <button>Anime</button>
+      </div>
+  </nav>
+  <main>
+    <div class="gallery">
+        <div class="gallery-item" data-category="nature">
+          <img src="images/Nature1.jpg" alt="Nature Image" />
+        </div>
+        <div class="gallery-item" data-category="city">
+          <img src="images/City1.jpg" alt="City Image" />
+        </div>
+        <div class="gallery-item" data-category="animal">
+          <img src="images/Animal1.jpg" alt="Animal Image" />
+        </div>
+        <div class="gallery-item" data-category="nature">
+          <img src="images/Nature2.jpg" alt="Nature Image 2" />
+        </div>
+        <div class="gallery-item" data-category="city">
+          <img src="images/City2.jpg" alt="City Image" />
+        </div>
+        <div class="gallery-item" data-category="animal">
+          <img src="images/Animal2.jpg" alt="Animal Image" />
+        </div>
+        <div class="gallery-item" data-category="nature">
+            <img src="images/Nature1.jpg" alt="Nature Image" />
+          </div>
+          <div class="gallery-item" data-category="city">
+            <img src="images/City1.jpg" alt="City Image" />
+          </div>
+          <div class="gallery-item" data-category="animal">
+            <img src="images/Animal1.jpg" alt="Animal Image" />
+          </div>
+          <div class="gallery-item" data-category="nature">
+            <img src="images/Nature2.jpg" alt="Nature Image 2" />
+          </div>
+          <div class="gallery-item" data-category="city">
+            <img src="images/City2.jpg" alt="City Image" />
+          </div>
+          <div class="gallery-item" data-category="animal">
+            <img src="images/Animal2.jpg" alt="Animal Image" />
+          </div>
+          <div class="gallery-item" data-category="nature">
+            <img src="images/Nature1.jpg" alt="Nature Image" />
+          </div>
+          <div class="gallery-item" data-category="city">
+            <img src="images/City1.jpg" alt="City Image" />
+          </div>
+          <div class="gallery-item" data-category="animal">
+            <img src="images/Animal1.jpg" alt="Animal Image" />
+          </div>
+          <div class="gallery-item" data-category="nature">
+            <img src="images/Nature2.jpg" alt="Nature Image 2" />
+          </div>
+          <div class="gallery-item" data-category="city">
+            <img src="images/City2.jpg" alt="City Image" />
+          </div>
+          <div class="gallery-item" data-category="animal">
+            <img src="images/Animal2.jpg" alt="Animal Image" />
+          </div>
+          <div class="gallery-item" data-category="nature">
+            <img src="images/Nature1.jpg" alt="Nature Image" />
+          </div>
+          <div class="gallery-item" data-category="city">
+            <img src="images/City1.jpg" alt="City Image" />
+          </div>
+          <div class="gallery-item" data-category="animal">
+            <img src="images/Animal1.jpg" alt="Animal Image" />
+          </div>
+          <div class="gallery-item" data-category="nature">
+            <img src="images/Nature2.jpg" alt="Nature Image 2" />
+          </div>
+          <div class="gallery-item" data-category="city">
+            <img src="images/City2.jpg" alt="City Image" />
+          </div>
+          <div class="gallery-item" data-category="animal">
+            <img src="images/Animal2.jpg" alt="Animal Image" />
+          </div>
+      </div>
+      <div class="modal" id="uploadModal">
+        <div class="modal-content">
+          <span class="close-modal">&times;</span>
+          <h2>Upload Image</h2>
+          <input type="file" id="imageUpload" accept="image/*" />
+          <label for="imageCategory">Select Category:</label>
+          <select id="imageCategory">
+            <option value="nature">Nature</option>
+            <option value="city">City</option>
+            <option value="animals">Animals</option>
+            <option value="custom">Custom</option>
+          </select>
+          <button id="addImages">Add Images</button>
+        </div>
+      </div>
+    
+      <!-- Lightbox -->
+      <div class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-img" src="" alt="" />
+        <div class="lightbox-controls">
+          <button id="prev">⟨</button>
+          <button id="next">⟩</button>
+        </div>
+      </div>
+  </main>
+</body>
+<script src="static/js/script.js"></script>
+</html>
