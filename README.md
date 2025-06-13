@@ -27,6 +27,7 @@
 ## ⚙️ How It Works
 
 > When a user uploads an image, it's read locally using JavaScript (`FileReader`) and added to the gallery in-memory. Since this app has no backend or cloud storage, images are not saved across sessions.
+> Demo : https://684bc3bc95c8b5731c4616e5--bespoke-panda-f715ae.netlify.app/
 
 ---
 
